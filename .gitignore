@@ -1,0 +1,20 @@
+# 🚫 NEVER COMMIT THESE
+*.csv
+*.parquet
+*.zip
+*.pkl
+*.onnx
+models/
+data/
+.env
+
+# 🐍 Python & Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# 🖥️ OS
+.DS_Store
+Thumbs.db
