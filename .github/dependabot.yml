@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5        # Prevents PR flood
+    labels:
+      - "dependencies"
+      - "security"
+    commit-message:
+      prefix: "deps"                   # e.g., "deps: bump requests from 2.28 to 2.31"
+    groups:                            # Batch minor/patch updates into one PR
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
